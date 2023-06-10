@@ -1,7 +1,10 @@
-console.log("hello 1");
-console.log("hello 2");
+async function sum(n1, n2) {
+    return n1 + n2;
+}
 
-setTimeout(() =>console.log("hello 3"),0);
+async function main() {
+    let result =  await sum(1, 10);
+    console.log(result);
+}
 
-console.log("hello 4");
-console.log("hello 5");
+main();
