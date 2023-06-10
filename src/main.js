@@ -1,10 +1,9 @@
-async function sum(n1, n2) {
-    return n1 + n2;
-}
+import { readFile } from "node:fs/promises";
 
 async function main() {
-    let result =  await sum(1, 10);
-    console.log(result);
+ let filePath ="F:\WPS MODULE\day11\package.json";
+ let fileData = await readFile(filePath, {encoding : "utf-8"});
+ console.log(fileData);
 }
 
 main();
