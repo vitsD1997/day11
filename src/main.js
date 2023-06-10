@@ -1,5 +1,6 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 
-let filePath = "F:\WPS MODULE\day11\package.json";
-let fileData =  readFileSync(filePath, { encoding : "utf-8"});
-console.log(fileData);
+let filePath = "F:\WPS MODULE\output.txt";
+let data = "hello world";
+writeFileSync(filePath, data);
+console.log("write Success!!");
