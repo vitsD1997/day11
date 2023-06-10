@@ -1,6 +1,7 @@
-import { readFileSync, writeFileSync } from "node:fs";
+console.log("hello 1");
+console.log("hello 2");
 
-let filePath = "F:\WPS MODULE\output.txt";
-let data = "hello world";
-writeFileSync(filePath, data);
-console.log("write Success!!");
+setTimeout(() =>console.log("hello 3"),0);
+
+console.log("hello 4");
+console.log("hello 5");
