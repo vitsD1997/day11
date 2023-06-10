@@ -1,4 +1,5 @@
-import {sum } from "./calc.js";
+import { readFileSync } from "node:fs";
 
-let output = sum(1, 1);
-console.log("sum=" + output);
+let filePath = "F:\WPS MODULE\day11\package.json";
+let fileData =  readFileSync(filePath, { encoding : "utf-8"});
+console.log(fileData);
