@@ -1,13 +1,15 @@
-import { writeFileSync } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 
 async function main() {
-let filePath = "F:\WPS MODULE\output1.txt";
-let data = `asynchronously writesdata into a file,
-           replacing the file if it already exists. data can be a string, a buffer, an <asyncIterable>,
-           or an <Iterable> object.`;
-writeFileSync(filePath, data);
-console.log("write Success!!");
-}
+    try {
+let filePath = "F:\WPS MODULE\day11\package.json";
+let data = await readFile(filePath, {emcoding: "utf8"});
+console.log(fileData);
+   } catch (e) {
+    console.log("Exception Occured :: ", e.message);
+     }
+
+   }
 
 
  main();
