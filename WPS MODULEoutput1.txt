@@ -1,0 +1,2 @@
+asynchronously writesdata into a file,
+           replacing the file if it exists. data can be a string, a buffer, an <asyncIterable
